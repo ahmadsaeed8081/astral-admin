@@ -108,6 +108,7 @@ const Header = (props) => {
         rpc: {
           56:"https://bsc-dataseed1.binance.org/"
         },
+
         chainId: 56,
       });
       await provider.enable();
@@ -133,6 +134,7 @@ const Header = (props) => {
         balance = web3.utils.fromWei(balance, "ether");
         matic = web3.utils.fromWei(matic, "ether");
 
+        
         props.set_user(accounts[0], web3, provider, balance, matic);
       } else {
         if (provider.wc.peerMeta.name == "MetaMask") {
