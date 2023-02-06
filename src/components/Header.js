@@ -12,11 +12,11 @@ const Header = (props) => {
   const [_web3, set_web3] = useState(null);
 
   async function Sign_out() {
-    const provider = new WalletConnectProvider({
+    provider = new WalletConnectProvider({
       rpc: {
-        137: "https://polygon-mainnet.infura.io/v3/294ba86a2f504ea0947006554734c90b",
+        56:"https://bsc-dataseed1.binance.org/"
       },
-      chainId: 137,
+      chainId: 56,
     });
     try {
       await provider.disconnect();
@@ -72,10 +72,9 @@ const Header = (props) => {
       //trust 1Wallet
       provider = new WalletConnectProvider({
         rpc: {
-          // 137: "https://polygon-mainnet.g.alchemy.com/v2/eRdxPlEv3QpMS-1nPDFkjtO-qDmurAoF",
-          137: "https://polygon-mainnet.infura.io/v3/294ba86a2f504ea0947006554734c90b",
+          56:"https://bsc-dataseed1.binance.org/"
         },
-        chainId: 137,
+        chainId: 56,
       });
 
       console.log(provider);
@@ -107,10 +106,9 @@ const Header = (props) => {
       //Wallet connect
       provider = new WalletConnectProvider({
         rpc: {
-          // 137: "https://polygon-mainnet.g.alchemy.com/v2/eRdxPlEv3QpMS-1nPDFkjtO-qDmurAoF",
-          137: "https://polygon-mainnet.infura.io/v3/294ba86a2f504ea0947006554734c90b",
+          56:"https://bsc-dataseed1.binance.org/"
         },
-        chainId: 137,
+        chainId: 56,
       });
       await provider.enable();
 
