@@ -1,0 +1,172 @@
+// Home Page
+.home-page {
+  width: 100%;
+  height: 100%;
+  min-height: 730px;
+  .wrap {
+    .info-wrapper {
+      grid-gap: 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 20px 0;
+      padding: 80px 0;
+      border-bottom: 1px solid #747474;
+      @include media("<=desktop") {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include media("<=tablet") {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .info-card {
+        height: 310px;
+        width: 100%;
+        padding: 30px;
+        border: 1px solid #f9f8fe;
+        border-radius: 15px;
+        background: #ffffff;
+        box-shadow: 0px 4px 45px rgba(0, 0, 0, 0.25);
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-image: url("../../../public/images/frame1.png");
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          background-image: url("../../../public/images/frame1.png");
+        }
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+          background-image: url("../../../public/images/frame2.png");
+        }
+        .icons {
+          height: 120px;
+          width: 110px;
+          overflow: hidden;
+          .ellips {
+            width: 100%;
+          }
+          .icon {
+            height: 46px;
+          }
+        }
+        .card-name {
+          margin: 30px 0;
+          text-align: center;
+          .name {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #000000;
+          }
+          .amount {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #000000;
+          }
+        }
+        .card-action {
+          width: 100%;
+          .btn {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19px;
+            border-radius: 5px;
+            color: #ffffff;
+            @include media("<=phoneH") {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+    .plan-section {
+      margin: 60px 0;
+      min-height: 700px;
+      padding: 40px 30px;
+      background: #ffffff;
+      box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+      @include media("<=phoneH") {
+        padding: 20px 12px;
+      }
+      .tbl {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        .btn {
+          padding: 4px 12px;
+          @include media("<=phoneH") {
+            font-size: 12px;
+          }
+        }
+        .WQNxq {
+          &::-webkit-scrollbar {
+            height: 4px;
+          }
+        }
+        //   Table Header
+        .rdt_TableHead {
+          .rdt_TableHeadRow {
+            .rdt_TableCol {
+              flex: 1;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 24px;
+              color: #262626;
+            }
+          }
+        }
+
+        //   Table Body
+        .rdt_TableBody {
+          .rdt_TableRow {
+            .rdt_TableCell {
+              flex: 1;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 24px;
+              color: #262626;
+
+              .status-tag {
+                padding: 4px 12px;
+                border-radius: 30px;
+                font-weight: 600;
+                border-bottom: 1px solid #323232;
+                border-right: 1.5px double #323232;
+                &.secondary {
+                  color: #898989;
+                  border: 1.5px solid #898989;
+                  color: #898989;
+                }
+                &.success {
+                  color: #00914e;
+                  border: 1.5px solid #00914e;
+                  color: #00914e;
+                }
+                &.primary {
+                  color: #2095d9;
+                  border: 1.5px solid #2095d9;
+                  color: #2095d9;
+                }
+                &.danger {
+                  color: #b93535;
+                  border: 1.5px solid #b93535;
+                  color: #b93535;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
