@@ -4,7 +4,7 @@
 // export const Token_address="0x8e1C1359c00212533033a8A1FCdb6bc395272D58";
 // export const nft_address="0x04d279873de44a9F9753E0EC8fD3404F42C56eeb";
 
-export const cont_address="0xd916A464F484c8309f171e90E6aB3c0D44F273e3";
+export const cont_address="0xd962cE68512C52F71Ca3033D43E8598049C2568F";
 export const Token_address="0x30aF54aeF773af78D6f052a327C32d3229c9661E";
 export const nft_address="0x58C0E7eA9C01B6D9F91FaE8ec891a94c9fFE7539";
 
