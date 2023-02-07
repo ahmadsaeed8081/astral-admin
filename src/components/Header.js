@@ -55,10 +55,11 @@ const Header = (props) => {
         let matic = await web3.eth.getBalance(accounts[0]);
         balance = web3.utils.fromWei(balance, "ether");
         matic = web3.utils.fromWei(matic, "ether");
+        console.log("before " + matic);
 
         props.set_user(accounts[0], web3, provider, balance, matic);
 
-        console.log("object" + matic);
+        console.log("objected" + matic);
       } else {
         try {
           await provider.request({

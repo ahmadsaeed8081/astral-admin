@@ -31,7 +31,7 @@ function set_user(_add,_provider,_web3,balance,matic){
   set_web3(_web3);
 set_matic(matic)
 setBalance(balance)
-console.log("ihjono "+address)
+console.log("ihjono11 "+address)
 
 }
 

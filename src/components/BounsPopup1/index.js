@@ -4,11 +4,13 @@ import { CloseIcon } from "../../assets";
 
 
 
-const BonusPopup = ( props ) => {
+const BonusPopup1 = ( props ) => {
 
 
 
   const [bonus, set_bonus] = useState("");
+  const [address, set_address] = useState("");
+
 
 
 
@@ -19,13 +21,22 @@ const BonusPopup = ( props ) => {
       <div className="hdr flex items-center justify-end">
         <div
           className="close-icon flex items-center justify-center"
-          onClick={(e) => props.setOpen(false)}
+          onClick={(e) => props.setOpen1(false)}
         >
           <CloseIcon />
         </div>
       </div>
       <div className="popup-wrap flex flex-col">
       <input
+            type="text"
+            className="txt cleanbtn w-full"
+            placeholder="Ente id"
+            value={address}
+            onChange={(e) => {
+              set_address(e.target.value);
+            }}
+          />    
+                <input
             type="number"
             className="txt cleanbtn w-full"
             placeholder="Enter Bonus Amount"
@@ -33,11 +44,11 @@ const BonusPopup = ( props ) => {
             onChange={(e) => {
               set_bonus(e.target.value);
             }}
-          />        
-          <div className="btn button" onClick={()=>props.send_bonus(bonus)}>Send</div>
+          />     
+          <div className="btn button" onClick={()=>props.send_bonus1(address,bonus)}>Send</div>
       </div>
     </div>
   );
 };
 
-export default BonusPopup;
+export default BonusPopup1;
