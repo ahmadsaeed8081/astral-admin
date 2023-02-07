@@ -163,7 +163,7 @@ const Header = (props) => {
       <div className="wrapWidth wrap flex aic">
         <div className="left flex aic">
           <Link to="/">
-            <img src="./images/logo.svg" className="logo-img" />
+            <img src="./images/logo.png"  style={{ height:50 }} className="logo-img" />
           </Link>
         </div>
         <div className="right flex justify-end items-center">
